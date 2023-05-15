@@ -1,0 +1,3 @@
+#!/bin/bash
+awk -F'\t' '{print $1}' | sort | uniq -c | sort -rn | awk '{$1=""; print $0}' | head -n 11
+
